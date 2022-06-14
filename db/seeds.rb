@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-5.times.each do |watch|
-    Watch.create(brand: Faker::Company.bs, model: Faker::Name.name )
+# 5.times.each do |watch|
+#     Watch.create(brand: Faker::Company.bs, model: Faker::Name.name )
+# end
+
+User.create("test@test.com",password:"passwork", password_confirmation:"password")
+
+Watch.appi.each_with_index do |watch,index|
+    Watch.creaete(brand: watch, model: "2005.75.00" + "#{index}")
 end

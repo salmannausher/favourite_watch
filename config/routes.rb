@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   #     get :favourite
   #   end
   # end
+  delete "remove_favourite", to: "favorite_watches#delete"
   put 'make_favourite', to: 'favorite_watches#create'
   get "/signup", to: "users#new"
   get "/login", to: "sessions#new"

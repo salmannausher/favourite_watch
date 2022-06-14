@@ -11,7 +11,7 @@
 										<p class="card-text">
 														<%= fav_watch.watch.model %>
 										</p>
-										<%#= link_to "Favourite", make_favourite_path(watch_id: watch), method: "put",class: "btn btn-primary" %>
+										<%= link_to "Remove Favourite", remove_favourite_path(watch_id: fav_watch.id), method: "delete",class: "btn btn-primary" %>
 						</div>
 				</div>
 			</div>

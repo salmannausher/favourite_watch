@@ -1,6 +1,8 @@
 <%= form_for @user do |f| %>
   <%= f.label :email %>
   <%= f.text_field :email, placeholder: "Email" %>
+  <%= f.label :age %>
+  <%= f.text_field :age, placeholder: "Age" %>
   <%= f.label :password %>
   <%= f.password_field :password, placeholder: "Password" %>
   <%= f.label :password_confirmation %>

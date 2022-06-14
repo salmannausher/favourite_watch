@@ -22,9 +22,10 @@ class UsersController < ApplicationController
     @favorite_watches = current_user.favorite_watches
   end
 
+
   private
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:email, :password,:age, :password_confirmation)
   end
 end

@@ -1,5 +1,5 @@
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
+<h1>Watch Collection</h1>
+
 <div class="row"> 
 	<% @watches.each do |watch| %>
 		<div class="col-md-4 mt-3">
@@ -12,7 +12,7 @@
 									<p class="card-text">
 													<%= watch.model %>
 									</p>
-									<%= link_to "Favourite", make_favourite_path(watch_id: watch), method: "put",class: "btn btn-primary" %>
+									<%= link_to "Add to Favourite", make_favourite_path(watch_id: watch), method: "put",class: "btn btn-primary" %>
 					</div>
 			</div>
 		</div>
