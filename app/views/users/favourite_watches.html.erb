@@ -1,0 +1,22 @@
+<% if @favorite_watches.present? %>
+	<div class="row"> 
+		<% @favorite_watches.each do |fav_watch| %>
+			<div class="col-md-4 mt-3">
+				<div class="card" style="width: 18rem;">
+						<img class="card-img-top" src="..." alt="Card image cap">
+						<div class="card-body">
+										<h5 class="card-title">
+														<%= fav_watch.watch.brand %>
+										</h5>
+										<p class="card-text">
+														<%= fav_watch.watch.model %>
+										</p>
+										<%#= link_to "Favourite", make_favourite_path(watch_id: watch), method: "put",class: "btn btn-primary" %>
+						</div>
+				</div>
+			</div>
+		<% end %>
+	</div> 
+	<% else %>
+		<h1>No Favourites yet<h1>
+<% end %>
